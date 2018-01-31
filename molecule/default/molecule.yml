@@ -7,7 +7,10 @@ lint:
   name: yamllint
 platforms:
   - name: instance
-    image: centos:7
+    image: centos/systemd
+    image_version: latest
+    privileged: true
+    command: /usr/sbin/init
 provisioner:
   name: ansible
   lint:
