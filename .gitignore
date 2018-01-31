@@ -6,4 +6,5 @@
 .tox
 .vagrant
 molecule/*/.molecule
+molecule/*/.pytest_cache
 tests/__pycache__
